@@ -1,5 +1,10 @@
 #!/bin/bash
 
+export NEZHA_SERVER=${NEZHA_SERVER:-'nztz.ldg.us.kg'}   # 哪吒3个变量不全不运行
+export NEZHA_PORT=${NEZHA_PORT:-'5555'}         # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
+export NEZHA_KEY=${NEZHA_KEY:-'curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && ./nezha.sh install_agent nztz.ldg.us.kg 5555 uo4lBcwtmKUaQyZcsi
+'}             # 哪吒客户端密钥
+
 function cleanup() {
     echo "Script interrupted."
     exit 1
